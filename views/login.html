@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #grey {
+        background-color: grey;
+        color: black;
+      }
+      #greyCol {
+        color: grey;
+        margin-left: 3rem;
+      }
+      .btnn {
+        height: 40px;
+        width: 80px;
+        border: 1px solid #0069d9;
+        background-color: transparent;
+        color: #0069d9;
+      }
+
+      .google-btn {
+        width: 184px;
+        height: 42px;
+        background-color: #4285f4;
+        border-radius: 2px;
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+      }
+      .google-icon-wrapper {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: #fff;
+      }
+      .google-icon {
+        position: absolute;
+        margin-top: 11px;
+        margin-left: 11px;
+        width: 18px;
+        height: 18px;
+      }
+      .btn-text {
+        margin: 11px 11px 0 0;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-family: "Roboto";
+        background: #007BFF;
+        text-align: center;
+    padding: 10px;
+      }
+      .btn-text:hover {
+        box-shadow: 0 0 6px #4285f4;
+      }
+      .btn-text:active {
+        background: #1669f2;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="border border-dark w-50 p-3">
+      <h1>iCrowdTask Login</h1>
+      <form class="border border-dark w-100 p-3" action="#!" method="POST">
+        <p class="h4 mb-4">Sign in</p>
+        <div class="d-flex justify-content-between">
+          <label>Your Email</label>
+          <a href="from.html" class="btn btn-primary btn-sm 2 mb-1 btnn">
+            Sign Up
+          </a>
+        </div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control mb-4"
+          placeholder="Email"
+        />
+        <div class="d-flex justify-content-between">
+          <label>Your Password</label>
+          <a href="">Forgot password</a>
+        </div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control mb-4"
+          placeholder="Password"
+        />
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="defaultLoginFormRemember"
+          />
+          <label class="custom-control-label" for="defaultLoginFormRemember"
+            >Save password</label
+          >
+        </div>
+        <button class="btn btn-primary btn-block my-4" type="submit">
+          Sign in
+        </button>
+        <p class="btn-text">Sign in with google</p>
+      </form>
+    </div>
+  </body>
+</html>
